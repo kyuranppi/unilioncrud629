@@ -1,0 +1,21 @@
+<div class = "container"> 
+<form action="/update/<%= @edit_post.id%>" method="get">
+  <div class="form-group">
+    <label>WRITER</label>
+    <input type=text class="form-control" name="writer" value="<%= @edit_post.writer%>">
+    
+  </div>
+  <div class="form-group">
+    <label>TITLE</label>
+    <input type=text class="form-control" name="title" value="<%= @edit_post.title%>">
+  </div>
+  
+  <div class="form-group">
+    <label>CONTENT</label>
+    <textarea class="form-control" rows="3" name="content"><%= @edit_post.writer%></textarea>
+  </div>
+  
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
